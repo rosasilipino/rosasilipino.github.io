@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HXBAL</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+</head>
+<body>
+    <div class="container">
+        <h1><b>HexBalance</b></h1>
+        <h2>LIVE BY THE RULES. 
+            <br>BALANCE THE CHAOS!</h2>
+        <h3>Sample Program</h3>
+        <p>math.hxbal</p>
+<pre><code id="example-code"># Rule definitions
+LOGIC
+rule add: -> x + y
+rule subtract: -> x - y
+rule divide: -> x // y
+rule multiply: -> x * y
+rule modulo: -> x % y
+
+FORCE
+    start
+        set x = 10
+        set y = 5
+        ekko(add)
+        ekko(subtract)
+        ekko(divide)
+        ekko(multiply)
+        ekko(modulo)
+    end</code></pre>
+<h3>Output</h3>
+<pre><code id="example-code">Rule added: add -> {'condition': None, 'result': 'x + y'}
+Rule added: subtract -> {'condition': None, 'result': 'x - y'}
+Rule added: divide -> {'condition': None, 'result': 'x // y'}
+Rule added: multiply -> {'condition': None, 'result': 'x * y'}
+Rule added: modulo -> {'condition': None, 'result': 'x % y'}
+15
+5
+2
+50
+0
+</code></pre>
+        <h3>run it yourself</h3>
+        <p>HexBalance's interpreter can be found on GitHub.Clone the repository and get started:</p>
+        <pre><code>$ git clone https://github.com/rosasilipino/HexBalance
+$ cd HexBalance
+$ python3 interpreter.py math.hxbal</code></pre>
+
+        <h3>Features</h3>
+        <ul>
+            <li>MODULAR AND EXPLICIT SEPERATION. <b>RULE</b> BASED <b>LOGIC</b></li>
+            <li>NO <B>FORCE</B> CAN BE TAKEN WITHOUT CHECKING <B>LOGIC</B></li>
+        </ul>
+
+        <div class="footer">
+            &copy; 2024 HexBalance | <a href="https://github.com/rosasilipino/HexBalance">GitHub Repository</a>
+        </div>
+    </div>
+</body>
+</html>

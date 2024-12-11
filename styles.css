@@ -1,0 +1,126 @@
+/* styles.css */
+body {
+    font-family: "Gill Sans", sans-serif;
+    background-color: #ededed;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 40px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 170px;
+    text-align: center;
+    width: 80%; /* Adjust the width as needed */
+    max-width: 900px; /* Limit the maximum width */
+    margin-left: auto; /* Center the container */
+    margin-right: auto; /* Center the container */
+}
+
+.container > * {
+    margin: 0 auto; /* Ensure children are centered */
+    max-width: 100%; /* Prevent overflow */
+}
+
+h1 {
+    font-family: "oswald", sans-serif;
+    font-size: 55px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    line-height: 1.75;
+    color: #33b0d6;
+}
+
+h2 {
+    color: #4e4e4e;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+h3 {
+    font-family: "oswald", sans-serif;
+    color: #eb6dcd;
+    margin-bottom: 15px; /* Add spacing below h3 */
+    margin-top: 20px; /* Optional: Add spacing above h3 */
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+p {
+    line-height: 1.5; /* Increase line height for better readability */
+    margin-bottom: 15px; /* Add spacing below paragraphs */
+    font-family: SpaceGrotesk-light;
+    text-align: left;
+    font-size: 12px;
+}
+
+.p.thick {
+    font-weight: bold;
+}
+
+pre {
+    background: #ededed;
+    padding: 15px; /* Increase padding inside the code box */
+    border-radius: 7px;
+    overflow-x: auto;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid #050404;
+    margin-bottom: 200px; /* Add spacing below the code block */
+    margin-top: 100px; /* Optional: Add spacing above the code block */
+}
+
+code {
+    color: #000000;
+    font-size: 0.9em;
+    border-radius: 5px;
+    margin-bottom: 100px; /* Add spacing below inline code blocks */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #f0f0f0;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+a {
+    color: #6b5b95;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    margin-top: 30px;
+    font-size: 0.8em;
+    color: #888;
+}
+
+.copy-button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #6b5b95;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.copy-button:hover {
+    background-color: #584b8e;
+}
